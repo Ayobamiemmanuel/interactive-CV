@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: grid;
+    place-content: center; */
+    margin: 90px;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+h2.title {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: rgb(82, 82, 82);
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 110px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #015755;
+}
+
+ul {
+    /* list-style-type: none; */
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    background: #8FFC99;
+    background: -webkit-radial-gradient(center, #8FFC99, #4DFEFC);
+    background: -moz-radial-gradient(center, #8FFC99, #4DFEFC);
+    background: radial-gradient(ellipse at center, #8FFC99, #4DFEFC);
+    border-radius: 10px;
+    color: #111;
+    display: grid;
+    place-content: center;
+    padding: 40px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.banner__name {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.5rem;
+}
+
+.banner__title {
+    font-size: 1.1rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 20px;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border-top: 1px solid #111;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #E6E6E6;
+    background: -webkit-radial-gradient(center, #E6E6E6, #FDFDFD);
+    background: -moz-radial-gradient(center, #E6E6E6, #FDFDFD);
+    background: radial-gradient(ellipse at center, #E6E6E6, #FDFDFD);
+}
+
+.resume__left {
+    padding-right: 50px;
+    padding-left: 50px;
+    border-right: 1px solid #111;
+}
+
+.resume__right {
+    padding-right: 60px;
+    padding-left: 50px;
+}
+
+.resume__about {
+    margin-bottom: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.resume__skillsdiv {
+    margin-bottom: 50px;
+}
+
+.resume__edu {
+    margin-bottom: 50px;
+}
+
+.resume__projects {
+    margin-bottom: 50px;
+}
+
+.resume__project {
+    margin-bottom: 15px;
+}
+
+.resume__project > h3 {
+    margin-bottom: 10px;
+}
+
+.resume__experience:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.experience__workplace {
+    margin-bottom: 10px;
+}
+
+.experience__title {
+    margin-bottom: 10px;
+}
+
+.resume__contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 0px 15px -2px #4DFEFC;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    border: 1px solid #4DFEFC;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    background: #8FFC99;
+    background: -webkit-radial-gradient(center, #8FFC99, #4DFEFC);
+    background: -moz-radial-gradient(center, #8FFC99, #4DFEFC);
+    background: radial-gradient(ellipse at center, #8FFC99, #4DFEFC);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 40px;
+    }
+
+    .resume__left {
+        border-right: none;
+        border-bottom: 1px solid #111;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        padding-left: 25px;
+    }
+
+    .resume__right {
+        padding-top: 40px;
+        padding-right: 30px;
+        padding-left: 25px;
+    }
+
+    .banner__name {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        letter-spacing: 0.4rem;
+    }
+
+    .banner__title {
+        font-size: 0.8rem;
+        letter-spacing: 0.4rem;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 70px;
+    }
+}
